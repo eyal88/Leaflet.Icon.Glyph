@@ -7,13 +7,6 @@ L.Icon.Glyph = L.Icon.extend({
 		iconAnchor:  [12, 41],
 		popupAnchor: [1, -34],
 		shadowSize:  [41, 41],
-// 		iconUrl: 'glyph-marker-icon.png',
-// 		iconSize: [35, 45],
-// 		iconAnchor:   [17, 42],
-// 		popupAnchor: [1, -32],
-// 		shadowAnchor: [10, 12],
-// 		shadowSize: [36, 16],
-// 		bgPos: (Point)
 		className: '',
 		prefix: '',
 		glyph: 'home',
@@ -61,6 +54,8 @@ L.Icon.Glyph = L.Icon.extend({
 		if (textContent) {
 			span.innerHTML = textContent;
 			span.style.display = 'inline-block';
+			span.style.borderRadius = '50px';
+			span.style.backgroundColor = '#fff';
 		}
 
 		return span;
