@@ -50,12 +50,12 @@ L.Icon.Glyph = L.Icon.extend({
 		span.style.marginLeft = options.glyphAnchor[0] + 'px';
 		span.style.marginTop = options.glyphAnchor[1] + 'px';
 		span.style.pointerEvents = 'none';
-
+		span.style.borderRadius = '50px';
+		span.style.backgroundColor = '#fff';
+		
 		if (textContent) {
 			span.innerHTML = textContent;
 			span.style.display = 'inline-block';
-			span.style.borderRadius = '50px';
-			span.style.backgroundColor = '#fff';
 		}
 
 		return span;
