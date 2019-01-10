@@ -11,6 +11,7 @@ L.Icon.Glyph = L.Icon.extend({
 		prefix: '',
 		glyph: 'home',
 		glyphColor: 'white',
+		markerColor: 'white',
 		glyphSize: '11px',	// in CSS units
 		glyphAnchor: [0, -7]	// In pixels, counting from the center of the image.
 	},
@@ -50,9 +51,8 @@ L.Icon.Glyph = L.Icon.extend({
 		span.style.marginLeft = options.glyphAnchor[0] + 'px';
 		span.style.marginTop = options.glyphAnchor[1] + 'px';
 		span.style.pointerEvents = 'none';
-		span.style.borderRadius = '50px';
-		span.style.backgroundColor = '#fff';
-		
+		span.style.background = options.markerColor;
+
 		if (textContent) {
 			span.innerHTML = textContent;
 			span.style.display = 'inline-block';
