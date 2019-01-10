@@ -3,6 +3,7 @@
 
 L.Icon.Glyph = L.Icon.extend({
 	options: {
+		iconUrl: null,
 		iconSize: [25, 41],
 		iconAnchor:  [12, 41],
 		popupAnchor: [1, -34],
@@ -51,7 +52,7 @@ L.Icon.Glyph = L.Icon.extend({
 		span.style.marginLeft = options.glyphAnchor[0] + 'px';
 		span.style.marginTop = options.glyphAnchor[1] + 'px';
 		span.style.pointerEvents = 'none';
-		span.style.background = options.markerColor;
+		span.style.backgroundColor = options.markerColor;
 
 		if (textContent) {
 			span.innerHTML = textContent;
